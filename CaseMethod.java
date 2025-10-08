@@ -11,7 +11,21 @@ public class  CaseMethod {
         System.out.print("NIM: ");
         String nim = scanner.nextLine();
 
-        
+         System.out.println("-----MATA KULIAH 1 Algoritma dan Pemrograman-----");
+        System.out.print("Nilai UTS: ");
+        double nilaiUTS = scanner.nextDouble();
+        System.out.print("Nilai UAS: ");
+        double nilaiUAS = scanner.nextDouble();
+        System.out.print("Nilai Tugas: ");
+        double nilaiTugas = scanner.nextDouble();
+
+        System.out.println("-----MATA KULIAH 2 Struktur Data-----");
+        System.out.print("Nilai UTS: ");
+        double nilaiUTS2 = scanner.nextDouble();
+        System.out.print("Nilai UAS: ");
+        double nilaiUAS2= scanner.nextDouble();
+        System.out.print("Nilai Tugas: ");
+        double nilaiTugas2 = scanner.nextDouble();
          scanner.close();
     }
 } 
