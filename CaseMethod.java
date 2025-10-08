@@ -3,7 +3,8 @@ import java.util.Scanner;
 public class  CaseMethod {
     public static void main(String[] args) {
         Scanner scanner = new Scanner (System.in);
-        
+        double RataRata = 0;
+        String NilaiHuruf = "C", Status = "TIDAK LULUS"; 
         
         System.out.println("======INPUT DATA MAHASISWA=====");
         System.out.print("Nama: ");
@@ -26,6 +27,42 @@ public class  CaseMethod {
         double nilaiUAS2= scanner.nextDouble();
         System.out.print("Nilai Tugas: ");
         double nilaiTugas2 = scanner.nextDouble();
+        double nilaiAkhir1 = (0.3 * nilaiUTS) + (0.4 * nilaiUAS) + (0.3 * nilaiTugas);
+        double nilaiAkhir2 = (0.3 * nilaiUTS2) + (0.4 * nilaiUAS2) + (0.3 * nilaiTugas2);
+        double NilaiAkhir = (nilaiAkhir1 + nilaiAkhir2) / 2;
+
+        if (NilaiAkhir >= 80 && NilaiAkhir <= 100) {
+    NilaiHuruf = "A";
+} else {
+    if (NilaiAkhir >= 73 && NilaiAkhir <= 79) {
+        NilaiHuruf = "B+";
+    } else {
+        if (NilaiAkhir >= 65 && NilaiAkhir <= 72) {
+            NilaiHuruf = "B";
+        } else {
+            if (NilaiAkhir >= 60 && NilaiAkhir <= 64) {
+                NilaiHuruf = "C+";
+            } else {
+                if (NilaiAkhir >= 50 && NilaiAkhir <= 59) {
+                    NilaiHuruf = "C";
+                } else {
+                    if (NilaiAkhir >= 39 && NilaiAkhir <= 49) {
+                        NilaiHuruf = "D";
+                    } else if (NilaiAkhir < 39 && NilaiAkhir >= 0) {
+                        NilaiHuruf = "E";
+                    } else {
+                        NilaiHuruf = "-";
+                    }
+                }
+            }
+        }
+    }
+}
+        if (NilaiAkhir >= 70) {
+            Status = "LULUS";
+        } else {
+            Status = "TIDAK LULUS";
+        }
          scanner.close();
     }
 } 
