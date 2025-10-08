@@ -63,6 +63,18 @@ public class  CaseMethod {
         } else {
             Status = "TIDAK LULUS";
         }
+        System.out.println("-----HASIL PENILITIAN AKADEMIK------");
+        System.out.println("Nama :" + nama);
+        System.out.println("NIM :" + nim);
+        System.out.println("Mata Kuliah\t\t\tUTS\tUAS\tTugas\tNilai Akhir\tNilai Huruf\tStatus" );
+        System.out.println("------------------------------------------------------------------------------------------");
+         
+        System.out.println("Algoritma Pemrograman\t\t" + nilaiUTS + "\t" + nilaiUAS + "\t" + nilaiTugas + "\t" + nilaiAkhir1 + "\t\t" + NilaiHuruf+ "\t\t" + Status);
+        System.out.println("Struktur Data\t\t\t" + nilaiUTS2 + "\t" + nilaiUAS2 + "\t" + nilaiTugas2 + "\t" + nilaiAkhir2 + "\t\t" + NilaiHuruf + "\t\t" + Status);
+        
+        RataRata = (nilaiAkhir1 + nilaiAkhir2) / 2;
+        System.out.println("Rata-Rata Nilai Akhir: " + RataRata);
+        System.out.println("Status Semester: " + Status);
          scanner.close();
     }
 } 
